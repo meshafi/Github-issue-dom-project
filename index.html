@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Issues</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Open+Sans:wght@400;700&family=Outfit:wght@300&family=Poppins:wght@600&family=Public+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Include toastr from CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div class="main-content">
+      <h1>GitHub Issues</h1>
+      <div class="create-issues">
+        <h2>Create An Issue</h2>
+        <textarea id="newIssueTitle" placeholder="Issue Title"></textarea>
+        <textarea id="newIssueBody" placeholder="Issue Body"></textarea>
+        <button onclick="createIssue()">Create Issue</button>
+      </div>
+      <div class="active-issues">
+        <h2>Current Issues</h2>
+        <div id="issuesList"></div>
+      </div>
+
+      <div class="update-issue" id="update-issue">
+        <div class="flex-update">
+          <h2>Update Issue</h2>
+          <h3>Title</h3>
+          <textarea id="updateIssueTitle" placeholder="Issue Title"></textarea>
+          <h3>Body</h3>
+          <textarea id="updateIssueBody" placeholder="Issue Body"></textarea>
+          <div>
+            <button onclick="updateIssue()">Submit</button>
+            <button onclick="cancelUpdate()">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="loading-indicator" style="display: none">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <p>Loading...</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="index1.js"></script>
+  </body>
+</html>

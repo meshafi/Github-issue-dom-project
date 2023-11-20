@@ -1,0 +1,148 @@
+h1,h2,h3{
+    font-family:Big Shoulders Display;
+    font-style: normal;
+    color:black;
+    font-weight: 900;
+    line-height: 1rem;
+    text-transform: uppercase;
+     margin-top:2rem;
+}
+h1{
+    font-size:3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    margin-top: 1rem;
+    font-size:1rem;
+}
+p{
+    font-family:Big Shoulders Display;
+    font-style: normll;
+    font-weight: 900;
+}
+strong{
+    font-family:Big Shoulders Display;
+    font-style: normal;
+    color: black;
+    font-weight: 900;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+.main-content{
+    border:2px solid black;
+    border-radius: 5px;
+    background-color:lavender;
+}
+.create-issues textarea{
+    resize: none;
+    border:2px solid black;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    color:black;
+}
+.update-issue textarea{
+    resize: none;
+    border:2px solid black;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    color:black;
+}
+.active-issues textarea{
+    margin-top:2rem;
+}
+#newIssueTitle{
+    width:20vw;
+    height:2rem
+}
+#newIssueBody{
+    width:40vw;
+    height:6rem;
+    margin-bottom: 2rem;
+}
+button{
+    width:fit-content;
+    padding:3px 2rem;
+    color:white;
+    background-color: black;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+button:hover{
+    cursor: pointer;
+    color:darkgray;
+}
+
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.create-issues{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    border:2px solid black;
+    padding:2rem;
+    background-color:dimgray;
+}
+.active-issues{
+    width:50vw;
+    border:2px solid black;
+    padding:2rem;
+    background-color:dimgray;
+    margin-bottom: 4rem;
+}
+
+#issuesList button{
+ margin-right:12px;
+}
+
+.update-issue{
+   display: none;
+   position: absolute;
+   align-items: center;
+   justify-content: center;
+   top:100px;
+   padding:20px;
+   flex-direction: column;
+   width:50rem;
+   border:2px solid black;
+   background-color: dimgray;
+   height:30rem;
+   z-index: 2;
+}
+.flex-update{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+#updateIssueBody{
+    width:40vw;
+    height:6rem;
+}
+#updateIssueTitle{
+    width:20vw;
+}
+#loading-indicator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
